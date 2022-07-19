@@ -441,7 +441,6 @@ h3 {
 	}
 }
 
-
 .carousel .item {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -504,11 +503,11 @@ h3 {
 }
 
 .carousel .item1 {
-	background-image: url(../../img/home/banner1.jpg);
+	background-image: url(../img/home/banner1.jpg);
 }
 
 .carousel .item2 {
-	background-image: url(../../img/home/banner2.jpg);
+	background-image: url(../img/home/banner2.jpg);
 }
 
 .carousel .item2 .text {
@@ -517,11 +516,11 @@ h3 {
 }
 
 .carousel .item3 {
-	background-image: url(../../img/home/banner3.jpg);
+	background-image: url(../img/home/banner3.jpg);
 }
 
 .carousel .item4 {
-	background-image: url(../../img/home/banner4.jpg);
+	background-image: url(../img/home/banner4.jpg);
 }
 
 .carousel .item4 .text {
