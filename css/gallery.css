@@ -74,7 +74,7 @@ h3 {
 }
 
 .header {
-	background-color: black;
+	background-color: #fff;
 	position: fixed;
 	top: 2.5rem;
 	width: 100%;
@@ -115,7 +115,7 @@ h3 {
 .header .container .navbar a {
 	margin-left: 1.5rem;
 	text-decoration: none;
-	color: white;
+	color: #000;
 	font-size: 1.2em;
 	font-weight: 400;
 	-webkit-transition: all 0.2s;
@@ -416,7 +416,7 @@ h3 {
 .footer .end-footer .container p .links:hover {
 	text-decoration: underline;
 }
-.footer .last-vid{
+.footer .last-vid {
 	text-align: center;
 }
 
@@ -549,7 +549,7 @@ h3 {
 }
 
 .list-pic {
-	background-color: #000;
+	background-color: #fff;
 }
 
 .list-pic .container {
@@ -563,7 +563,7 @@ h3 {
 
 .hny-title {
 	padding-bottom: 30px;
-	color: #dddddd;
+	color: #000;
 }
 
 .list-pic .row {
@@ -583,7 +583,7 @@ h3 {
 	border-radius: 30px;
 	width: 350px;
 	height: 255px;
-	text-align: left
+	text-align: left;
 }
 
 .list-pic .col {
@@ -597,9 +597,11 @@ h3 {
 	position: absolute;
 	top: 0;
 	left: -100%;
-	background-image: linear-gradient(to right,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(255, 255, 255, 0.3) 100%);
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.3) 100%
+	);
 	transform: skewX(-25deg);
 	transition: all 0.75s;
 }
@@ -607,7 +609,6 @@ h3 {
 .list-pic .container .item {
 	overflow: hidden;
 	position: relative;
-
 }
 
 .list-pic .container .item:hover::before {
@@ -624,7 +625,6 @@ h3 {
 	.img-fluid {
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 1201px) {
@@ -637,7 +637,6 @@ h3 {
 	.img-fluid {
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -650,7 +649,6 @@ h3 {
 	.img-fluid {
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 992px) {
@@ -663,7 +661,6 @@ h3 {
 	.img-fluid {
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 768px) {
@@ -676,5 +673,73 @@ h3 {
 	.img-fluid {
 		width: 100%;
 	}
+}
 
+#switchButton {
+	margin-left: 20px;
+	font-size: 24px;
+	border: none;
+	background-color: white;
+}
+#switchButton .fa-sun {
+	display: none;
+}
+#switchButton .fa-moon {
+	display: block;
+}
+.dark #switchButton .fa-sun {
+	display: block;
+	color: white;
+	background-color: #151515;
+}
+.dark #switchButton .fa-moon {
+	display: none;
+}
+.dark#myBody {
+	background-color: #151515;
+}
+
+.dark#myBody header {
+	background-color: #151515;
+}
+.dark#myBody header a {
+	color: white;
+}
+.dark#myBody a.active {
+	color: #189a46;
+}
+.dark#myBody .list-pic {
+	background-color: #151515;
+}
+.dark#myBody .hny-title {
+	color: #fff;
+}
+@media screen and (max-width: 1024px) {
+	.img-fluid {
+		height: 500px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.img-fluid {
+		height: 300px;
+	}
+}
+#movetop {
+	display: none;
+	position: fixed;
+	bottom: 90px;
+	right: 15px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	width: 48px;
+	height: 48px;
+	background: #189a46;
+	padding: 0;
+	line-height: 36px;
+	border-radius: 50px;
+	transition: 0.3s ease-out;
 }

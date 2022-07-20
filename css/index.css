@@ -900,7 +900,7 @@ h3 {
 }
 
 .food .container h1 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	margin-bottom: 15px;
 }
 
@@ -909,15 +909,78 @@ h3 {
 	color: #696969;
 }
 
-.food .container .video {
-	margin-top: 2rem;
-	border-radius: 10px;
+.petfood__img img {
+	width: 100%;
+	border-radius: 2%;
+	height: auto;
 }
 
-.food .container .video iframe {
-	border-radius: 10px;
+.petfood__img {
+	text-align: center;
+	padding-top: 15px;
+}
+.petfood__btm {
+	position: relative;
+}
+.petfood__btm span {
+	position: absolute;
+	color: green;
+	background: white;
+	padding: 20px 18px;
+	border-radius: 50%;
+	padding-left: 22px;
+	animation: ripple 1s linear infinite;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
+.petfood__btm span:hover {
+	font-size: 20px;
+}
+
+#small-dialog1 {
+	max-width: 750px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.mfp-hide {
+	display: none !important;
+}
+
+#small-dialog1 iframe {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+iframe {
+	border: none;
+}
+.petfood__video {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.play-view {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(50% - 40px);
+}
+@keyframes ripple {
+	0% {
+		box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%),
+			0 0 0 20px rgb(15 162 67 / 25%);
+	}
+	100% {
+		box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%),
+			0 0 0 40px rgb(50 100 245 / 0%);
+	}
+}
 .feedbacks {
 	background: rgba(147, 107, 232, 0.05);
 }
@@ -984,6 +1047,7 @@ h3 {
 
 .feedbacks .container .clients .item .info .text h3 {
 	margin-bottom: 7px;
+	font-size: 20px;
 }
 
 .feedbacks .container .clients .item .info .text span {
@@ -1482,4 +1546,138 @@ h3 {
 		width: 100%;
 		margin-left: 0;
 	}
+}
+
+#switchButton {
+	margin-left: 20px;
+	font-size: 24px;
+	border: none;
+	background-color: white;
+}
+#switchButton .fa-sun {
+	display: none;
+}
+#switchButton .fa-moon {
+	display: block;
+}
+.dark #switchButton .fa-sun {
+	display: block;
+	color: white;
+	background-color: #151515;
+}
+.dark #switchButton .fa-moon {
+	display: none;
+}
+.dark#myBody header {
+	background-color: #151515;
+}
+.dark#myBody header a {
+	color: white;
+}
+.dark#myBody a.active {
+	color: #189a46;
+}
+.dark#myBody .abouts {
+	background-color: #151515;
+}
+.dark#myBody .abouts h1 {
+	color: #fff;
+}
+.dark#myBody .services {
+	background-color: #222222;
+}
+.dark#myBody .services h3 {
+	color: white;
+}
+.dark#myBody .services a {
+	color: white;
+}
+.dark#myBody .services a:hover {
+	color: #189a46;
+}
+.dark#myBody .services .item {
+	background-color: #151515;
+}
+.dark#myBody .services .item:hover {
+	background-color: #222222;
+}
+.dark#myBody .offer {
+	background-color: #151515;
+}
+.dark#myBody .offer h1 {
+	color: #fff;
+}
+.dark#myBody .info .text p {
+	color: #fff;
+}
+.dark#myBody .plans {
+	background-color: #222222;
+}
+.dark#myBody .plans .col .item {
+	background-color: #151515;
+}
+.dark#myBody .plans .col .item h3 {
+	color: #fff;
+}
+.dark#myBody .plans h1 {
+	color: #fff;
+}
+.dark#myBody .plans .item2 {
+	box-shadow: none;
+}
+.dark#myBody .food {
+	background-color: #151515;
+}
+.dark#myBody .food .container h1 {
+	color: #fff;
+}
+.dark#myBody .feedbacks {
+	background-color: #222222;
+}
+.dark#myBody .feedbacks h1 {
+	color: white;
+}
+.dark#myBody .feedbacks .item {
+	background-color: #151515;
+}
+.dark#myBody .feedbacks .item h3 {
+	color: #fff;
+}
+.dark#myBody .updated {
+	background-color: #151515;
+}
+.dark#myBody .updated h1 {
+	color: #fff;
+}
+#movetop {
+	display: none;
+	position: fixed;
+	bottom: 90px;
+	right: 15px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	width: 48px;
+	height: 48px;
+	background: #189a46;
+	padding: 0;
+	line-height: 36px;
+	border-radius: 50px;
+	transition: 0.3s ease-out;
+}
+#small-dialog1 {
+	max-width: 750px;
+	position: relative;
+	margin: 40px auto;
+}
+.mfp-hide {
+	display: none !important;
+}
+#small-dialog1 iframe {
+	width: 100%;
+	height: 400px;
+	display: block;
 }

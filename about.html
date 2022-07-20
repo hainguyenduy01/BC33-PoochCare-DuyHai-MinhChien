@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="myBody">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,9 +29,10 @@
 					<a class="link" href="./gallery.html">Gallery</a>
 					<a class="link" href="./blog.html">Blog</a>
 					<a class="link" href="./contact.html">Contact</a>
-					<a href="#">
-						<i class="fa fa-moon"></i>
-					</a>
+					<button class="btn" id="switchButton" title="Click to switch theme">
+						<i class="fas fa-moon"></i>
+						<i class="fas fa-sun"></i>
+					</button>
 				</div>
 				<div class="nav-bars">
 					<a href="#">
@@ -399,5 +400,41 @@
 				</div>
 			</div>
 		</footer>
+		<button
+			onclick="topFunction()"
+			id="movetop"
+			title="Go to top"
+			style="display: block"
+		>
+			⤴
+		</button>
+		<script>
+			document.getElementById('switchButton').onclick = function () {
+				document.getElementById('myBody').classList.toggle('dark');
+			};
+		</script>
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			function scrollFunction() {
+				if (
+					document.body.scrollTop > 20 ||
+					document.documentElement.scrollTop > 20
+				) {
+					document.getElementById('movetop').style.display = 'block';
+				} else {
+					document.getElementById('movetop').style.display = 'none';
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 	</body>
 </html>
