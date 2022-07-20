@@ -1052,6 +1052,9 @@ h3 {
 .dark#myBody .team-name p {
 	color: #afafaf;
 }
+.dark#myBody .about-us h4 {
+	color: #fff;
+}
 #movetop {
 	display: none;
 	position: fixed;
