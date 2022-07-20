@@ -1,0 +1,15 @@
+Danh sách thành viên
+- Nguyễn Duy Hải
+- Nguyễn Minh Chiến
+Website: PoochCare
+ 1.Home, 2.About, 3.Services, 4.Gallery, 5.Blog, 6.Contact
+
+Phân công công việc
+
+Duy Hải:      1.Home. 
+   	        2.About.
+              3.Services.
+       
+Minh Chiến:   1.Gallery.
+      	  2.Blog.
+      	  3.Contact.
